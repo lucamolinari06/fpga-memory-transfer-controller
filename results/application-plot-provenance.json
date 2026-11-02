@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "meaning": "Figures derived from independently audited native application records; no new RTL runs.",
+  "matplotlib": "3.9.4",
+  "selected_cases": [
+    {
+      "workload": "sequential",
+      "threshold": 25,
+      "queries": 1,
+      "timing": "base"
+    },
+    {
+      "workload": "sequential",
+      "threshold": 25,
+      "queries": 4,
+      "timing": "base"
+    },
+    {
+      "workload": "hot",
+      "threshold": 100,
+      "queries": 1,
+      "timing": "base"
+    },
+    {
+      "workload": "conflict",
+      "threshold": 100,
+      "queries": 1,
+      "timing": "base"
+    }
+  ],
+  "sha256": {
+    "benchmarks/plot_application.py": "13956878853963160c599b87bcb97977e9c45a0efcb5f67c4b02476885886c3a",
+    "benchmarks/report_application.py": "3b1c086e9a3a5d3165e0a2cd508540bcec6b626692bebf09361053cf4af73f7c",
+    "results/application-summary.json": "0333e889013a99ce476415ec6a25f4527e1a1c65615aba9d373c0a133c9a1660",
+    "results/application-overview.png": "3c7828f9948bd816732bc3632dcada4c929384a5a87e3f71bc4f3ccbb92cccef",
+    "results/application-overview.svg": "5c9ed398c1a1825dd93b37adfef2cb297478e6c734a80a48a9aa130b8fe7f178"
+  }
+}

@@ -1,0 +1,17 @@
+build/
+.tools/
+.venv/
+__pycache__/
+*.pyc
+*.vcd
+*.fst
+.DS_Store
+
+# Local publication staging and unrelated generated documents
+tmp/
+output/
+
+# Generated evidence and local development material in a public checkout
+results/raw/
+docs/validation/
+core-reproduction.log

@@ -1,0 +1,9 @@
+{
+  "artifacts": {
+    "core-overview.png": "3883a13434f64ecbbf81796b27f328191222db3a8904518a5fda06d40f2114a3",
+    "core-overview.svg": "0c4fc73bf4138d9e8e94bf74d577a929183899cf7b011bbf5a7d608c9bbdcf38"
+  },
+  "matplotlib": "3.9.4",
+  "script_sha256": "f6a82f06a3af87869c7a0e64d6aa2d9990c95ef8277727ee3a79715be2f0933a",
+  "summary_sha256": "4ebc139dd98513de19e3c936458ad5753da2d6dda5a9851c16f54f4a9020a1ea"
+}

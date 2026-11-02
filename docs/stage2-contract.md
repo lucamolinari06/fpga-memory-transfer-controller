@@ -1,0 +1,9 @@
+# Stage 2 implementation contract (approved architecture, 2026-10-21)
+
+Before controller implementation: Stage 2 implements one logical slot and A-only or B-only at elaboration. It never requests both interfaces. Every accepted command produces one full-block request on the selected interface. Baselines keep the approved prefix/suffix bank partition and early ordered reading. Width is fixed at 32 bits; N is a power of two in 1..256 and S is 0..N.
+
+Use FREE -> REQUEST -> ACTIVE -> FREE control. Filling and draining overlap in ACTIVE. Command/request payloads are copied/held until acceptance. Response handshakes write exactly one successive word; pre-edge committed counts gate synchronous reads. Final consumption releases the slot only after all N responses/read issues. No same-edge command reallocation. A slot is occupied even when the output alone is stalled. Reset cancels the entire transaction across all components without resetting bank contents.
+
+The baseline tests derive expected data from accepted command addresses, not controller split/count signals. Separately monitor request address/length, response timing/last/count, output order/stability and bank bounds. Use independent Python-generated memory fixtures and an SV arithmetic oracle. Include single-word/end splits, minimum latency, burst gaps, periodic consumer stalls, consecutive offered commands, multiple blocks and reset in REQUEST, latency wait, partial fill, and held output. Runtime timeouts bound every test. Require an early-consumption witness and exact write/read/consume latency witnesses, rather than only checking eventual data.
+
+This is a Stage 2 correctness suite. Hybrid arrival orders, double-buffer ownership, broad random/fault campaigns and performance comparisons remain later stages. A small corruption-negative test may confirm that the independent scoreboard is active; it is not the full Stage 5 fault campaign.

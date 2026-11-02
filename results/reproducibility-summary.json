@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "date": "2026-11-02",
+  "environment": "macOS arm64; existing Verilator 5.048; source-keyed native compiler cache may be reused",
+  "scope": "Source-only snapshot in separate directory, no raw records or build products copied; not independent OS/compiler qualification",
+  "core": {
+    "fresh_native_benchmark_runs": 4002,
+    "original_p0_runs": 78,
+    "p0_replay_runs": 78,
+    "profiled_runs": 1230,
+    "buffered_runs": 2616,
+    "buffered_records": "all byte-identical to development archive",
+    "buffered_metrics": "all exactly equal",
+    "depth_one_shared_field_matches": 1308,
+    "correctness_chain": "all original, timing, buffered and Stage 5 suites passed",
+    "final_audit": "PASS"
+  },
+  "application": {
+    "fresh_native_benchmark_runs": 384,
+    "matched_sets": 96,
+    "checked_records": 122880,
+    "correctness_outcomes": 40,
+    "update_outcomes": 4,
+    "record_csvs": "all byte-identical",
+    "metrics_and_updates": "all exactly equal"
+  },
+  "core_source_sha256": {
+    "rtl/sync_bank.sv": "5d1ffa11ef891b8663f1db91b792c82040ec39f255735e3ae8e0cbbe2cff4d28",
+    "rtl/single_memory_controller.sv": "3659768f2946e706079b0472840d0817b018c9ffc17a6a9d250cb987e5556697",
+    "rtl/hybrid_controller.sv": "3ab6f1e8d2831e0f58b4a222fe12a1747355db0e2e18113bd6ac668b4a6bd7ca",
+    "sim/models/profiled_memory_pair.sv": "80743f434325fc87c4eda756727fb5c345b4965dd35f62112da26f7f6ff313ef",
+    "sim/models/timing_calendar.sv": "218f9a162151c27f4257d04fc7424c70977af67f8871e22e90da487a2e4f955b",
+    "sim/models/stream_sink.sv": "334750fe19ce6c39e3342f37342c9e9fa4be99d3d51a7b99dd6fc5526e7c229c",
+    "sim/tb/service_monitor.sv": "454b8ae6e8457d4881d97f65ebb44720d47514c54e9e0303ee61b321bcab9fb0",
+    "sim/tb/address_scoreboard.sv": "dce602c1ef0c29154381d44133bd1bb17508e055203f0294b7bb92a3bbe5e3b9",
+    "sim/models/behavioral_memory.sv": "dbc928f85071a1a660f174268cb6272b57c0e134c1eb03047541007144553d9a",
+    "rtl/buffered_transfer_controller.sv": "549732d8f5e225e8e461f782f73ce31babf67aa0eb229088dedf4678cb2558ff",
+    "sim/tb/buffered_benchmark_tb.sv": "cf011052060b22255c42c9c3635a1da8c2b49734293aae04d11ce29c0582b819",
+    "benchmarks/run_double_buffer.py": "a2d87ea8ecfc2f39fbd40f6d3afc35d27c0d30be5d304592da3e0afccaa48354",
+    "benchmarks/run_single_buffer.py": "85e7ed57023b21ccd7c2f640aaac9d14e484bd4e49e9a5e23ca71dba811a3d66",
+    "benchmarks/run_memory_timing.py": "35a17cb8024ef1ee0ce7c879b04b6901c34f9f8461817976c4112d66eaacb81c",
+    "benchmarks/timing_inputs.py": "aa4b795094b5eb34b7d7d453a2aeb84c54e66419f2abfa6cbd6eb447f4b8ef38",
+    "tests/run_baseline.py": "4506802ad13850ca9fa6c2830d08cdd6920a8a12a036946c66d462975ca3dd79"
+  },
+  "application_source_sha256": {
+    "rtl/sync_bank.sv": "5d1ffa11ef891b8663f1db91b792c82040ec39f255735e3ae8e0cbbe2cff4d28",
+    "rtl/buffered_transfer_controller.sv": "549732d8f5e225e8e461f782f73ce31babf67aa0eb229088dedf4678cb2558ff",
+    "rtl/record_reduce.sv": "2994bc4c17efcd4dc9f11e7ea0beda11e80ec79dc1a243e748ec53daea227c78",
+    "rtl/header_first_controller.sv": "fca2989224c8955130d828b38c0f1096a87840cb45850297c0789e714a7d64a6",
+    "rtl/record_cache.sv": "d8bebfee29ed0348a12dccd923c8aa4fb1dc0439de07e9a6a5e6b5dc83ef5ecb",
+    "sim/models/application_memory.sv": "ad08fad87b44aec7c24c67198094fdaf1ca4ad9d80ce0f37199630280ac0312d",
+    "sim/tb/record_application_tb.sv": "55fe8b2fded51e8dc4156eccb853436217740a5a6f806950b33bf91182e3e1ad",
+    "tests/run_application.py": "4eba1bd16663c44cc01685daed082860f288fc836f85ee96a44fabef931df0e9"
+  },
+  "logs": {
+    "core_sha256": "b9604443f56a70df761df1f70d2df4afab8a73475e8c49d08ad89d565bfac794",
+    "application_sha256": "2947aa8875861999f95af3e7f111932bbdd24b1cd194d49dc21f7b1986d0dc2a"
+  },
+  "publication": "This receipt records local source-package reproduction; repository publication is tracked separately."
+}

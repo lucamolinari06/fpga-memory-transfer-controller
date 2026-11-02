@@ -1,0 +1,6 @@
+{
+  "report_sha256": "a51f05e72982bd74c101653f0f60ec767172c2ae0c6c71dfd1b34a01124a69d6",
+  "script_sha256": "68ef2bea007a4e56ecec43442728d10c9b818f3b557e76acc4e73051c0202c90",
+  "matplotlib": "3.9.4",
+  "note": "Whiskers are the range of four predeclared external traces, not confidence intervals."
+}

@@ -1,0 +1,9 @@
+{
+  "matplotlib": "3.9.4",
+  "input_sha256": "b9a629b6c9cf38b310ff33fa296db3b168155e59f538cbcbeb7c5bbac412f28f",
+  "source_sha256": {
+    "benchmarks/plot_single_buffer.py": "c89802ffd5b15273188316185ce172118908af77b17b8281500473668fb66ae6",
+    "benchmarks/report_single_buffer.py": "dc12351a1a9b0d1fe68e9e57a8d5320e83ca078b20186875a86583119d7abd1e",
+    "benchmarks/requirements-plot-lock.txt": "5adeb6ebcca86ba41e893f22d464acb8975c4937e6c695c48b00bf86262ec2a6"
+  }
+}
